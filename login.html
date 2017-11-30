@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+
+
+ </head> 
+
+<body>
+ 
+<form action="index.html">
+ 
+
+  <div class="container">
+	<h1 id="welcome" style="display:block; color:white; text-align:center;">Welcome!</h1>
+	<p style="display:block; color:white; text-align:center;" id="tutorialId">This is the new super smooth cookie clicker for an awesome user experience. Login and let your clicks become meaningful!</p>
+    <label style="display:block; color:white;" ><b>E-mail</b></label>
+    <input style="display:block;" id="emailVarInput" type="text" name="uname" required>
+
+    <label style="display:block; color:white;" id="loginVarField"><b>Password</b></label>
+    <input style="display:block;" id="loginVarInput" type="password" name="psw" required >
+	
+	<button id="forgotPswButton" style="display:block; color:white;" type="button"
+		onclick="document.getElementById('id01').style.display = 'block';">I forgot the password!</button>
+    <button class ="lgn" id="loginVarButton"style="display:block;"type="submit" href="test.html">Login!</button>
+	
+    <label id="rememberMeText" style="color:white;"><input id="rememberMe" type="checkbox" checked="checked"> Remember me!</label>
+  </div>
+	
+</form> 
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" >
+
+    <div class="container2">
+      <label><b>Introduce your e-mail address in case you remember this one:</b></label>
+      <input id="forgotPswId" type="text" required>
+        
+      <button type="submit">Send me the e-mail!</button>
+    </div>
+
+  </form>
+ 
+</div>
+
+</body>
+</html>

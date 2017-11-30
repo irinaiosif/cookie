@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Cookies</title>
+<link href="cookieStyle.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+</head>
+
+
+<div class="topnav" id="myTopnav">
+	<a href="login.html" onclick="myFunction()"><span>Logout</span></a>
+	<a href="#options" onclick="myFunction()"><span>Options</span></a>
+	<a href="#store" onclick="myFunction()"><span>Store</span></a>
+	<a href="#section-c" onclick="myFunction()"><span>Stats</span></a>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	
+	
+</div> 
+<a href="login.html" class="logoutButton"><span>Logout</span></a>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<header class="grid showcase">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+
+  </div>
+</header>
+
+<main id="main">
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <div class="content-text">
+        <p id="commentsTextBelow" class="commentsText risingAway">You feel like making cookies. But nobody wants to eat your cookies</p>
+		<p id="commentsText" class="commentsText risingUp">You feel like making cookies. But nobody wants to eat your cookies.</p>
+	  </div>
+    </div>
+  </section>
+
+  <section id="section-b" class="grid">
+    <ul>
+      <li style="background:transparent;">
+        <div class="card">
+          <div class="card-content" >
+            <h3 class="card-title">Click me!</h3>
+            <div class="cookieAnchor">
+					<div class="shineBase shine2"></div>
+					<div class="shineBase shine"></div>
+					<div class="bigCookie"></div>
+				</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="options" class="card">
+			<div class="title">
+				<h1 class="titleText">Options</h1>
+			</div>
+          <div class="card-content my-group">
+            <label class="switch">
+				<input type="checkbox">
+				<span class="slider"></span>
+				Option 1
+			</label>
+            <label class="switch">
+				<input type="checkbox">
+				<span class="slider"></span>
+				Option 2
+			</label>
+            <label class="switch">
+				<input type="checkbox">
+				<span class="slider"></span>
+				Option 3
+			</label>
+			<p style="text-align:left; padding-top:50px;">Theme:</p>
+			<select>
+				<option value="Cookie">Cookie</option>
+				<option value="Unavailable1">Unavailable</option>
+				<option value="Unavailable2">Unavailable</option>
+				<option value="Unavailable3">Unavailable</option>
+			</select> 
+		</div>
+		  
+        </div>
+      </li>
+      <li>
+        <div id="store" class="card">
+					<div class="title">
+						<h1 class="titleText">Store</h1>
+					</div>
+			<div class="card-content">
+				<div class="store">
+					<button class="tooltip">Cursor
+						<span class="tooltiptext">Autoclicks once every 10 seconds!</span>
+					</button>
+					
+					<button class="tooltip">Grandma
+						<span class="tooltiptext">A nice grandma to bake more cookies!</span>
+					</button>
+					<button class="tooltip">Farm
+						<span class="tooltiptext">Grows cookie plants from cookie seeds!</span>
+					</button>
+					<button class="tooltip" style="cursor:not-allowed; opacity: 0.6;">[Locked]
+						<span class="tooltiptext">Keep clicking to unlock this item!</span>
+					</button>
+				</div>
+			</div>
+			
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Stats & Info</h2>
+      <p>Cookies in bank: [x]</p>
+	  <p>Run started: [x] minutes, [y] seconds ago</p>
+	  <p>Cookies per second: [x]</p>
+	  <p>Hand-made cookies: [x]</p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="main-footer" class="grid">
+  <div>Created by Irina Iosif</div>
+  <div>Remake of <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a></div>
+</footer>
+
+</body>
+</html>
