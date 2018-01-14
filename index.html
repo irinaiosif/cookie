@@ -19,16 +19,8 @@
 	
 </div> 
 <a href="login.html" class="logoutButton"><span>Logout</span></a>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
+
 <header class="grid showcase">
   <div class="bg-image"></div>
   <div class="content-wrap">
@@ -45,7 +37,7 @@ function myFunction() {
 	  </div>
     </div>
   </section>
-
+					
   <section id="section-b" class="grid">
     <ul>
       <li style="background:transparent;">
@@ -55,7 +47,10 @@ function myFunction() {
             <div class="cookieAnchor">
 					<div class="shineBase shine2"></div>
 					<div class="shineBase shine"></div>
-					<div class="bigCookie"></div>
+					<div id = "theCookie" class="bigCookie">
+						<canvas id ="ctx" width="128" height="128" ></canvas>
+					</div>
+					
 				</div>
           </div>
         </div>
@@ -123,10 +118,10 @@ function myFunction() {
   <section id="section-c" class="grid">
     <div class="content-wrap">
       <h2 class="content-title">Stats & Info</h2>
-      <p>Cookies in bank: [x]</p>
-	  <p>Run started: [x] minutes, [y] seconds ago</p>
-	  <p>Cookies per second: [x]</p>
-	  <p>Hand-made cookies: [x]</p>
+      <p id = "counter" >Cookies in bank: 0</p>
+	  <p id = "timer" >Run started: 0 minutes, 0 seconds ago</p>
+	  <p id = "perSec">Cookies per second: 0</p>
+	  <p id="lastScore">Last score: 0</p>
     </div>
   </section>
 

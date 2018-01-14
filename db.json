@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "username": "test0",
+      "password": "test1230",
+      "options": [
+        "1",
+        "0",
+        "1"
+      ],
+      "bank": "4",
+      "theme": "0"
+    },
+    {
+      "id": "1",
+      "username": "test1",
+      "password": "test1231",
+      "options": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bank": "4",
+      "theme": "0"
+    },
+    {
+      "id": "2",
+      "username": "irina",
+      "password": "qwerty",
+      "options": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bank": "15",
+      "theme": "0"
+    },
+    {
+      "id": "3",
+      "username": "testiar",
+      "password": "iar",
+      "options": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bank": "8",
+      "theme": "0"
+    },
+    {
+      "id": "4",
+      "username": "mh",
+      "password": "mmm",
+      "options": [
+        "0",
+        "0",
+        "0"
+      ],
+      "bank": "9",
+      "theme": "0"
+    }
+  ]
+}

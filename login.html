@@ -3,13 +3,13 @@
  <head>
 
 	<link rel="stylesheet" type="text/css" href="loginStyle.css">
-
-
+	
+	
  </head> 
 
 <body>
  
-<form action="index.html">
+<form action="index.html" >
  
 
   <div class="container">
@@ -22,7 +22,7 @@
     <input style="display:block;" id="loginVarInput" type="password" name="psw" required >
 	
 	<button id="forgotPswButton" style="display:block; color:white;" type="button"
-		onclick="document.getElementById('id01').style.display = 'block';">I forgot the password!</button>
+		onclick="document.getElementById('id01').style.display = 'block';">Forget inserted cooker</button>
     <button class ="lgn" id="loginVarButton"style="display:block;"type="submit" href="test.html">Login!</button>
 	
     <label id="rememberMeText" style="color:white;"><input id="rememberMe" type="checkbox" checked="checked"> Remember me!</label>
@@ -35,15 +35,37 @@
   <form class="modal-content animate" >
 
     <div class="container2">
-      <label><b>Introduce your e-mail address in case you remember this one:</b></label>
-      <input id="forgotPswId" type="text" required>
+      <label><b>You are to delete the inserted account, are you sure?</b></label>
+      <!--<input id="forgotPswId" type="text" required>-->
         
-      <button type="submit">Send me the e-mail!</button>
+      <button onclick="deleteAccount(document.getElementById('emailVarInput').value.toString(), document.getElementById('loginVarInput').value.toString());">Yes. Bye-bye!</button>
     </div>
 
   </form>
  
 </div>
+
+<script>
+/*function deleteAccount(user,psw){
+alert("delete");
+    fetch('http://localhost:3000/data')
+        .then(function (response) {
+		console.log(response);
+		alert(response);
+            response.json().then(function (data) {
+			console.log(data);
+                for(var i=0;i<data.length;i++){
+					alert("for");
+					if(data[i].username === user && data[i].password === psw){
+					console.log("AICI");
+						var xmlhttp = new XMLHttpRequest();
+						xmlhttp.open("DELETE", 'http://localhost:3000/data' + data[i].id, true);
+						}
+					}
+				});
+			});
+	}	*/		
+</script>
 
 </body>
 </html>
